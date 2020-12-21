@@ -1,0 +1,21 @@
+daemon off;
+events {}
+http {
+server {
+        
+#port
+
+#location1
+		
+#location2
+		
+#location3
+		
+#location4
+		
+#location5
+access_log /dev/stdout;
+error_log /dev/stdout;
+
+}
+}
