@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/kyripa/nginx-lb.git'
-      }
+	git credentialsId: 'GitHub-SSHKey', url: 'https://github.com/kyripa/nginx-lb.git' 
+     }
     }
     stage('Building image') {
       steps{
